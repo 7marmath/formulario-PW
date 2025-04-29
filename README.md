@@ -1,2 +1,2 @@
-# formulario-PW
-Formulário em HTML e PHP com estilização em CSS para cadastro e login de usuários.
+# Atividade_formulario_web
+Página html de um formulário simples

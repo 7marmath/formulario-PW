@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://fatecferraz.edu.br/"><img src="img/fateclogo.webp" alt="Logo da fatec ferraz de vasconcelos e do centro paula souza"></a>
+    </header>
+    <section>
+        <div class="container">
+            <div class="titulo">
+                <h1>Formulário de Login</h1>
+            </div>
+            <form action="server_select.php" method="post">
+                <fieldset>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <button type="submit">Entrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                    <p><a href="recuperar.html">Esqueceu a senha?</a></p>
+                    <p>Não possuí uma conta? <a href="cadastrar.html">Cadastrar-se</a></p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
