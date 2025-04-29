@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-// Verificação mais robusta
+
 if(!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: login.html?erro=4"); // Não logado
+    header("Location: login.html?erro=4"); 
     exit();
 }
 
@@ -17,13 +17,13 @@ try {
 
     if(!$usuario) {
         session_destroy();
-        header("Location: login.html?erro=6"); // Usuário não encontrado
+        header("Location: login.html?erro=6");
         exit();
     }
 
 } catch(PDOException $e) {
     error_log("Erro ao carregar usuário: " . $e->getMessage());
-    header("Location: login.html?erro=5"); // Erro no servidor
+    header("Location: login.html?erro=5"); 
     exit();
 }
 ?>
