@@ -36,12 +36,7 @@ try {
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <header>
-        <a href="https://fatecferraz.edu.br/">
-            <img src="img/fateclogo.webp" alt="Logo da Fatec Ferraz de Vasconcelos">
-        </a>
-    </header>
-    <section>
+        <section>
         <div class="container">
             <div class="titulo">
                 <h1>Bem-vindo, <?php echo htmlspecialchars($usuario['nome']); ?>!</h1>
